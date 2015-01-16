@@ -1,9 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-
-namespace Lime {
+﻿namespace Lime {
     public class Message : Envelope {
-        public string Type { get; set; }
+        public Type Type { get; set; }
 
         public object Content { get; set; }
     }

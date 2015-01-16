@@ -1,5 +1,4 @@
-﻿
-namespace Lime {
+﻿namespace Lime {
     public static class MethodExtensions {
         private static readonly Method _get = new Method("get");
         private static readonly Method _set = new Method("set");
