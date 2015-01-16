@@ -2,6 +2,7 @@
     "version": "1.0.0-alpha",
     "dependencies": {
     },
+    "code": "*.cs",
     "frameworks": {
         "aspnet50": {
             "dependencies": {
