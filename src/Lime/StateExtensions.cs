@@ -1,5 +1,4 @@
-﻿
-namespace Lime {
+﻿namespace Lime {
     public static class StateExtensions {
         private static readonly State _new = new State("new");
         private static readonly State _negotiating = new State("negotiating");

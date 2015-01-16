@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-
-namespace Lime {
+﻿namespace Lime {
     public class Command : Envelope { 
         public virtual Method Method { get; set; }
 
