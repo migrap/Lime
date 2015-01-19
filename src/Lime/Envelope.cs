@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 
 namespace Lime {
-    public abstract class Envelope {
+    public class Envelope {
         public Guid Id { get; set; }
 
         public Node From { get; set; }

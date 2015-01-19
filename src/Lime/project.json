@@ -2,7 +2,7 @@
     "version": "1.0.0-alpha",
     "dependencies": {
     },
-    "code": "*.cs",
+    "exclude": [ "*.shproj","*.projitems"],
     "frameworks": {
         "aspnet50": {
             "dependencies": {

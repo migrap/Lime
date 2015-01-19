@@ -10,7 +10,11 @@ namespace Lime {
         }
 
         public override string ToString() {
-            return string.Format("{0}/{1}", base.ToString(), _instance);
+            if (string.IsNullOrWhiteSpace(_instance)) {
+                return base.ToString();
+            } else {
+                return string.Format("{0}/{1}", base.ToString(), _instance);
+            }
         }
 
         public bool Equals(Node other) {
@@ -28,7 +32,7 @@ namespace Lime {
             var match = Pattern.Match(s);
 
             if (match.Success) {
-                return new Node(match.Groups[0].Value, match.Groups[1].Value, match.Groups[2].Value);
+                return new Node(match.Groups[1].Value, match.Groups[2].Value, match.Groups[3].Value);
             }
 
             return null;

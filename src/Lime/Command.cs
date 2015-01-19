@@ -4,7 +4,7 @@
 
         public virtual Uri Uri { get; set; }
 
-        public virtual Type Type { get; set; }
+        public virtual MediaType Type { get; set; }
 
         public virtual object Resource { get; set; }
 

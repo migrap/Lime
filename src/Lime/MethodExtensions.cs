@@ -5,19 +5,19 @@
         private static readonly Method _delete = new Method("delete");
         private static readonly Method _observe = new Method("observe");
 
-        public static Method Get(this Command command) {
+        public static Method Get(this CommandExtension<Method> command) {
             return _get;
         }
 
-        public static Method Set(this Command command) {
+        public static Method Set(this CommandExtension<Method> command) {
             return _set;
         }
 
-        public static Method Delete(this Command command) {
+        public static Method Delete(this CommandExtension<Method> command) {
             return _delete;
         }
 
-        public static Method Observe(this Command command) {
+        public static Method Observe(this CommandExtension<Method> command) {
             return _observe;
         }
     }

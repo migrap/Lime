@@ -36,4 +36,6 @@
             return _failed;
         }
     }
+
+    public interface EventExtension<T> { }
 }

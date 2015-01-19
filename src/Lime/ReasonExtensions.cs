@@ -1,18 +1,19 @@
 ﻿namespace Lime {
     public static class ReasonExtensions {
-        public static Reason GeneralError(this object self, string description = "") {
-            const int code = 1;
-            return new Reason(code, description);
+        private static readonly int General = 1;
+        private static readonly int Session = 11;
+        private static readonly int Gateway = 81;
+
+        public static Reason GeneralError(this CommandExtension<Reason> self, string description = "") {
+            return new Reason(General, description);
         }
 
-        public static Reason SessionError(this object self, string description = "") {
-            const int code = 11;
-            return new Reason(code, description);
+        public static Reason SessionError(this CommandExtension<Reason> self, string description = "") {
+            return new Reason(Session, description);
         }
 
-        public static Reason GatewayError(this object self, string description = "") {
-            const int code = 81;
-            return new Reason(code, description);
-        }        
+        public static Reason GatewayError(this CommandExtension<Reason> self, string description = "") {
+            return new Reason(Gateway, description);
+        }
     }
 }

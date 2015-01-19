@@ -2,12 +2,12 @@
 
 namespace Lime {
     public static class SessionExtensions {
-        public static void State(this Session session, Func<Session, State> state) {
-            session.State = state(session);
+        public static void State(this Session session, Func<SessionExtension<State>, Func<State>> state) {
+            session.State = state(null)();
         }
 
-        public static void Reason(this Session session, Func<Session, Reason> reason) {
-            session.Reason = reason(session);
+        public static void Reason(this Session session, Func<SessionExtension<Reason>, Func<string, Reason>> reason, string description = "") {
+            session.Reason = reason(null)(description);
         }
     }
 }

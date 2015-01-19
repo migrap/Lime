@@ -10,7 +10,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		global.json = global.json
 	EndProjectSection
 EndProject
-Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "Lime", "src\Lime\Lime.kproj", "{B5C6BE18-EFF3-4DFD-A6A5-4073AA892BAD}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lime", "src\Lime\Lime.csproj", "{DACFF333-02EE-483D-8DE4-D11F2C06C9C3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -18,15 +18,15 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{B5C6BE18-EFF3-4DFD-A6A5-4073AA892BAD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{B5C6BE18-EFF3-4DFD-A6A5-4073AA892BAD}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{B5C6BE18-EFF3-4DFD-A6A5-4073AA892BAD}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{B5C6BE18-EFF3-4DFD-A6A5-4073AA892BAD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DACFF333-02EE-483D-8DE4-D11F2C06C9C3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DACFF333-02EE-483D-8DE4-D11F2C06C9C3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DACFF333-02EE-483D-8DE4-D11F2C06C9C3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DACFF333-02EE-483D-8DE4-D11F2C06C9C3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
-		{B5C6BE18-EFF3-4DFD-A6A5-4073AA892BAD} = {010E17D4-C21C-4990-ACCE-B0DC1997051D}
+		{DACFF333-02EE-483D-8DE4-D11F2C06C9C3} = {010E17D4-C21C-4990-ACCE-B0DC1997051D}
 	EndGlobalSection
 EndGlobal

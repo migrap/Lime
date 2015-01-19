@@ -39,29 +39,42 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ChatState.cs" />
+    <Compile Include="ChatStateExtension.cs" />
+    <Compile Include="ChatStateExtensions.cs" />
     <Compile Include="Command.cs" />
     <Compile Include="CommandExtensions.cs" />
     <Compile Include="Envelope.cs" />
     <Compile Include="Event.cs" />
     <Compile Include="EventExtensions.cs" />
     <Compile Include="Extensions.cs" />
+    <Compile Include="CommandExtension.cs" />
     <Compile Include="Identity.cs" />
     <Compile Include="Message.cs" />
+    <Compile Include="MessageExtension.cs" />
     <Compile Include="MessageExtensions.cs" />
     <Compile Include="Method.cs" />
     <Compile Include="MethodExtensions.cs" />
     <Compile Include="Node.cs" />
     <Compile Include="Notification.cs" />
+    <Compile Include="NotificationExtension.cs" />
     <Compile Include="NotificationExtensions.cs" />
+    <Compile Include="Presence.cs" />
+    <Compile Include="PresenceExtension.cs" />
+    <Compile Include="PresenceExtensions.cs" />
     <Compile Include="Reason.cs" />
     <Compile Include="ReasonExtensions.cs" />
+    <Compile Include="RoutingRule.cs" />
+    <Compile Include="RoutingRuleExtension.cs" />
+    <Compile Include="RoutingRuleExtensions.cs" />
     <Compile Include="Session.cs" />
+    <Compile Include="SessionExtension.cs" />
     <Compile Include="SessionExtensions.cs" />
     <Compile Include="State.cs" />
     <Compile Include="StateExtensions.cs" />
     <Compile Include="Status.cs" />
     <Compile Include="StatusExtensions.cs" />
-    <Compile Include="Type.cs" />
+    <Compile Include="MediaType.cs" />
     <Compile Include="Uri.cs" />
   </ItemGroup>
   <ItemGroup>

@@ -51,7 +51,7 @@ namespace Lime {
             var match = Pattern.Match(s);
 
             if (match.Success) {
-                return new Identity(match.Groups[0].Value, match.Groups[1].Value);
+                return new Identity(match.Groups[1].Value, match.Groups[2].Value);
             }
 
             return null;
