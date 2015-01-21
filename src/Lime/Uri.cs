@@ -1,15 +1,12 @@
 ﻿using System;
 using System.Diagnostics;
-using System.Text.RegularExpressions;
 
 namespace Lime {
     [DebuggerDisplay("{DebuggerDisplay()}")]
-    public class Uri : IEquatable<Uri> {
-        private static readonly Regex Pattern = new Regex(@"^((lime://)(\w\.?-?)+@?(\w\.?-?@?)+)?(/(\w\.?-?@?)+)+(\?{1}((\w+=\w+)&?)+)?$");
+    public class Uri : IEquatable<Uri> {        
         private string _value;
 
         private Uri(string value) {
-            Pattern.MatchOrThrow(value);
             _value = value;
         }
 

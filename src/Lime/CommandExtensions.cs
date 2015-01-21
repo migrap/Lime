@@ -12,17 +12,17 @@ namespace Lime {
         }
 
         public static void Type(this Command command, Func<CommandExtension<MediaType>, Func<MediaType>> type) {
-            //command.Type = type(command);
+            command.Type = type(null)();
         }
 
         public static void Status(this Command command, Func<CommandExtension<Status>, Func<Status>> status) {
             command.Status = status(null)();
-        }
+        }        
 
         public static void Reason(this Command command, Func<CommandExtension<Reason>, Func<string, Reason>> reason, string description = "") {
             command.Reason = reason(null)(description);
         }
-
+       
         private static void Sandbox() {
             (new Command()).Reason(x => x.GeneralError, "");
         }

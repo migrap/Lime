@@ -1,15 +1,12 @@
 ﻿using System;
 using System.Diagnostics;
-using System.Text.RegularExpressions;
 
 namespace Lime {
     [DebuggerDisplay("{DebuggerDisplay()}")]
     public class MediaType : IEquatable<MediaType> {
-        private static readonly Regex Pattern = new Regex(@"(?P<main>\w+|\*)/(?P<sub>\w+|\*)(\s*;\s*(?P<param>\w+)=\s*=\s*(?P<val>\S+))?");
         private string _value;
 
         public MediaType(string value) {
-            //Pattern.MatchOrThrow(value);
             _value = value;
         }
 

@@ -1,10 +1,12 @@
-﻿namespace Lime {
+﻿using System;
+
+namespace Lime {
     public class Command : Envelope { 
         public virtual Method Method { get; set; }
 
         public virtual Uri Uri { get; set; }
 
-        public virtual MediaType Type { get; set; }
+        public virtual string Type { get; set; }
 
         public virtual object Resource { get; set; }
 
