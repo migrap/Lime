@@ -4,7 +4,7 @@ namespace Lime {
     public class Command : Envelope { 
         public virtual Method Method { get; set; }
 
-        public virtual Uri Uri { get; set; }
+        public virtual string Uri { get; set; }
 
         public virtual string Type { get; set; }
 

@@ -39,11 +39,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Builders\CommandBuilder.cs" />
+    <Compile Include="Builders\IBuilder.cs" />
+    <Compile Include="Builders\ICommandBuilder.cs" />
+    <Compile Include="Builders\IMessageBuilder.cs" />
+    <Compile Include="Builders\MessageBuilder.cs" />
     <Compile Include="ChatState.cs" />
     <Compile Include="ChatStateExtension.cs" />
     <Compile Include="ChatStateExtensions.cs" />
     <Compile Include="Command.cs" />
     <Compile Include="CommandExtensions.cs" />
+    <Compile Include="Contact.cs" />
     <Compile Include="Envelope.cs" />
     <Compile Include="Event.cs" />
     <Compile Include="EventExtensions.cs" />

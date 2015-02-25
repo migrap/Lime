@@ -7,7 +7,7 @@ namespace Lime {
             command.Method = method(null)();
         }
 
-        public static void Uri(this Command command, Func<CommandExtension<Uri>, Func<Uri>> uri) {
+        public static void Uri(this Command command, Func<CommandExtension<string>, Func<string>> uri) {
             command.Uri = uri(null)();
         }
 
