@@ -1,12 +1,11 @@
 ﻿{
-    "version": "1.0.0-alpha",
-    "dependencies": {
-    },
-    "exclude": [ "*.shproj","*.projitems"],
-    "frameworks": {
-        "aspnet50": {
-            "dependencies": {
-            }
-        }
-    }
+	"version": "1.0.0-alpha",
+	"dependencies": {
+	},
+	"frameworks": {
+		"aspnet50": {
+			"dependencies": {
+			}
+		}
+	}
 }
