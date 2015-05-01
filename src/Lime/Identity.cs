@@ -7,7 +7,7 @@ namespace Lime {
     public class Identity : IEquatable<Identity> {
         protected static readonly Regex Pattern = new Regex("^(?:([^\"&'/:<>@]{1,1023})@)?([^/@]{1,1023})(?:/(.{1,1023}))?$");
         protected readonly string _name;
-        protected readonly string _domain;        
+        protected readonly string _domain;
 
         protected Identity(string name, string domain) {
             _name = name;
@@ -23,10 +23,10 @@ namespace Lime {
         }
 
         public bool Equals(Identity other) {
-            if (ReferenceEquals(null, other)) {
+            if(ReferenceEquals(null, other)) {
                 return false;
             }
-            if (ReferenceEquals(this, other)) {
+            if(ReferenceEquals(this, other)) {
                 return true;
             }
 
@@ -34,13 +34,13 @@ namespace Lime {
         }
 
         public override bool Equals(object obj) {
-            if (ReferenceEquals(null, obj)) {
+            if(ReferenceEquals(null, obj)) {
                 return false;
             }
-            if (ReferenceEquals(this, obj)) {
+            if(ReferenceEquals(this, obj)) {
                 return true;
             }
-            if (obj.GetType() != this.GetType()) {
+            if(obj.GetType() != this.GetType()) {
                 return false;
             }
 
@@ -50,7 +50,7 @@ namespace Lime {
         public static Identity Parse(string s) {
             var match = Pattern.Match(s);
 
-            if (match.Success) {
+            if(match.Success) {
                 return new Identity(match.Groups[1].Value, match.Groups[2].Value);
             }
 

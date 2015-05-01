@@ -1,11 +1,15 @@
 ﻿{
-	"version": "1.0.0-alpha",
-	"dependencies": {
-	},
-	"frameworks": {
-		"aspnet50": {
-			"dependencies": {
-			}
-		}
-	}
+  "version": "1.0.0-*",
+  "description": "",
+  "authors": [ "" ],
+  "tags": [ "" ],
+  "projectUrl": "",
+  "licenseUrl": "",
+
+  "dependencies": {
+  },
+
+  "frameworks": {
+    "dnx451": { }
+  }
 }
