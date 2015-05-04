@@ -1,14 +1,8 @@
 ﻿{
-  "version": "1.0.0-*",
-  "description": "",
-  "authors": [ "" ],
-  "tags": [ "" ],
-  "projectUrl": "",
-  "licenseUrl": "",
-
+  "description": "LIME Protocol",
+  "version": "1.0.0-beta4",
   "dependencies": {
   },
-
   "frameworks": {
     "dnx451": { }
   }
